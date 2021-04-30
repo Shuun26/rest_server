@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "607638bc9e001948e870a7e2"
+  },
+  "estado": true,
+  "nombre": "AlbertoT",
+  "correo": "alberto.t2626@gmail.com",
+  "password": "$2a$10$rtI6oi/NobXfGgdZc.yQS.cMx0oAiDHjJGf2tfHV9uv0EPuX004Oa",
+  "__v": 0,
+  "rol": "Admin_Rol"
+},{
+  "_id": {
+    "$oid": "607639229e001948e870a7e4"
+  },
+  "estado": true,
+  "nombre": "German",
+  "correo": "german.t2626@gmail.com",
+  "password": "$2a$10$1OauFIFXWd.upYsFnLFOLeufFi/4NG1RNiCjWTvtOaRxFfGebTEc6",
+  "__v": 0,
+  "rol": "Cliente_Rol"
+},{
+  "_id": {
+    "$oid": "6084315094c9b74e64da126c"
+  },
+  "rol": "Cliente_Rol",
+  "estado": true,
+  "nombre": "Shey",
+  "correo": "sasanza@gmail.com",
+  "password": "$2a$10$XtL3X0u/Xv7amTzyCczVi.ja97dZub6K7.zbnn7kpbePKeDvYZAIe",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608441316832052ecc234b32"
+  },
+  "rol": "Cliente_Rol",
+  "estado": true,
+  "nombre": "SheyA",
+  "correo": "sasanza1@gmail.com",
+  "password": "$2a$10$UR1H9s8o0bOANDlFyQWHgOeN.nKaBMGSAE8ESvuNcWsqRtoaynGhu",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60846349c1ece53b10c741b4"
+  },
+  "rol": "Cliente_Rol",
+  "estado": true,
+  "nombre": "SheyAs",
+  "correo": "sasanza12@gmail.com",
+  "password": "$2a$10$scQPFyaEV5J8mTvStWo1ouFhY1O0Hmgtdptg2cjrzoAI72gpdF7Rm",
+  "__v": 0
+}]

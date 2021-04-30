@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6085904b48e1950f1016678d"
+  },
+  "estado": true,
+  "nombre": "categoria1",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6085905248e1950f1016678e"
+  },
+  "estado": true,
+  "nombre": "categoria2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6085905648e1950f1016678f"
+  },
+  "estado": false,
+  "nombre": "categoria3Actualizada",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60859540b9870d48f0a04c2b"
+  },
+  "estado": true,
+  "nombre": "categoria4",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60859ab5ce9dbf1a8098d79f"
+  },
+  "estado": false,
+  "nombre": "nombreactualizado",
+  "__v": 0
+}]

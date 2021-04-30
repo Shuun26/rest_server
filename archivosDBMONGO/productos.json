@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "6085a36a7dbdb4340824fd17"
+  },
+  "estado": true,
+  "precio": 5,
+  "disponible": true,
+  "nombre": "producto1actualizado",
+  "usuario": {
+    "$oid": "6084315094c9b74e64da126c"
+  },
+  "categoria": {
+    "$oid": "6085904b48e1950f1016678d"
+  },
+  "descripcion": "Lorem Ipsum",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6085a4327dbdb4340824fd18"
+  },
+  "estado": true,
+  "precio": 5,
+  "disponible": true,
+  "nombre": "producto1actualizado",
+  "usuario": {
+    "$oid": "60846349c1ece53b10c741b4"
+  },
+  "categoria": {
+    "$oid": "6085904b48e1950f1016678d"
+  },
+  "descripcion": "Lorem Ipsum",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6085a45a7dbdb4340824fd19"
+  },
+  "estado": true,
+  "precio": 5,
+  "disponible": true,
+  "nombre": "producto2",
+  "usuario": {
+    "$oid": "60846349c1ece53b10c741b4"
+  },
+  "categoria": {
+    "$oid": "60859540b9870d48f0a04c2b"
+  },
+  "descripcion": "Lorem Ipsum",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6085a46a7dbdb4340824fd1a"
+  },
+  "estado": true,
+  "precio": 5,
+  "disponible": true,
+  "nombre": "producto2",
+  "usuario": {
+    "$oid": "608441316832052ecc234b32"
+  },
+  "categoria": {
+    "$oid": "60859540b9870d48f0a04c2b"
+  },
+  "descripcion": "Lorem Ipsum",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6085a4df39a5c111105b0b9c"
+  },
+  "estado": false,
+  "precio": 5,
+  "disponible": true,
+  "nombre": "producto2asdasdads",
+  "usuario": {
+    "$oid": "608441316832052ecc234b32"
+  },
+  "categoria": {
+    "$oid": "60859540b9870d48f0a04c2b"
+  },
+  "descripcion": "Lorem Ipsum",
+  "__v": 0
+}]
