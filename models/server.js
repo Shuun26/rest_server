@@ -9,6 +9,8 @@ class Server {
         this.port = process.env.PORT;
         this.usuariosPath = '/usuarios';
         this.authPath = '/auth';
+        this.categoriaPath = "/categoria";
+        this.productosPath = '/producto';
         /* Conexión a db */
         this.dbConex();
 
@@ -35,6 +37,8 @@ class Server {
     routes() {
         this.app.use(this.usuariosPath, require('../routes/users'));
         this.app.use(this.authPath, require('../routes/auth'));
+        this.app.use(this.categoriaPath, require('../routes/categoria'));
+        this.app.use(this.productosPath, require('../routes/productos'));
     }
 
     listen() {

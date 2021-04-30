@@ -1,14 +1,33 @@
 const { response, request } = require('express');
+const atob = require("atob");
 const Usuario = require('./../models/user');
 const bcrypt = require('bcryptjs');
 const { validationResult } = require('express-validator');
 
 const usuariosGet = async(req = request, res = response) => {
-    const usuarios = await Usuario.find();
-    res.json({
-        msg: 'Api - Get',
-        usuarios
-    });
+    const rol = req.rol;
+    if (!rol) {
+        return res.status(401).json({
+            msg: "No existe este rol"
+        })
+    }
+    if (rol === "Admin_Rol") {
+        const usuarios = await Usuario.find();
+        return res.json({
+            msg: 'Api - Get',
+            usuarios
+        });
+    } else {
+        let token = req.header("x-token");
+        token = JSON.parse(atob(token.split(".")[1]));
+
+        const usuarios = await Usuario.findById(token.uid);
+
+        return res.json({
+            msg: 'Api - Get',
+            usuarios
+        });
+    }
 }
 
 const usuariosPost = async(req = request, res = response) => {
@@ -19,9 +38,9 @@ const usuariosPost = async(req = request, res = response) => {
         });
     }
 
-    let { nombre, correo, password, estado } = req.body;
+    let { nombre, correo, password, rol, estado } = req.body;
 
-    const usuario = new Usuario({ nombre, correo, password, estado });
+    const usuario = new Usuario({ nombre, correo, password, rol, estado });
 
     const salt = bcrypt.genSaltSync();
     usuario.password = bcrypt.hashSync(password, salt);

@@ -13,6 +13,12 @@ const usuarioSchema = new Schema({
     password: {
         type: String
     },
+    rol: {
+        type: String,
+        default: "Cliente_Rol",
+        require: [true, "Debe tener un rol asignado"],
+        enum: ['Admin_Rol', 'Cliente_Rol']
+    },
     estado: {
         type: Boolean,
         default: true,

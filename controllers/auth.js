@@ -4,7 +4,7 @@ const Usuario = require('./../models/user');
 const { generarToken } = require('../helper/generar-jwt');
 
 const login = async(req = request, res = response) => {
-
+    const rol = req.rol;
     const { correo, password } = req.body;
 
     try {
@@ -39,7 +39,8 @@ const login = async(req = request, res = response) => {
             msg: "Login exitoso",
             correo,
             password,
-            token
+            token,
+            rol
         })
 
     } catch (error) {
